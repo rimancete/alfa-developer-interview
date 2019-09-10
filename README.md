@@ -29,6 +29,8 @@ Referência [OData Services](https://www.odata.org/odata-services/)
 - [ ] ***Excluir*** a pessoa que você incluiu acima
 - [ ] Consultar todos os aeroportos que o ***endereço da localização*** contenha a palavra 'District'
 
+<br />
+<br />
 
 #### QUESTÕES EXCLUSIVAS PARA DESENVOLVEDORES ADVPL
 
@@ -39,12 +41,15 @@ Referência [OData Services](https://www.odata.org/odata-services/)
 - SIGAMAT.EMP
 - SIGAADV.PSS 
 
+<br />
 
 ***2.*** Descreva, de forma breve, como criar um ambiente de testes, a partir de um ambiente de produção já em uso. Este ambiente de testes deve utilizar um banco de dados próprio (não pode utilizar o banco de dados da produção).
 
+<br />
 
 ***3.*** Como fazemos para consultar, instalar ou desinstalar Stored Procedures fornecidas pela Totvs ?
 
+<br />
 
 ***4.*** Para que servem as chaves abaixo, no arquivo APPSERVER.INI ?
 * [PRODUCAO]	 
@@ -63,6 +68,7 @@ Referência [OData Services](https://www.odata.org/odata-services/)
 * TopServer=localhost	 
 * TopALIAS=PROTHEUSV12	 
 
+<br />
 
 ***5.*** Descreva o que significa cada parte do código:
 ```ADVPL
@@ -73,7 +79,9 @@ Processa({||U_GPT(Cod)},"A executar")
 * U_GPT	 
 * Cod	 
 * "A executar"	 
- 	 
+
+<br />
+
 ***6.*** Qual é o erro do programa abaixo e como corrigí-lo?
 ```ADVPL
 User Function Exemplo()
@@ -81,6 +89,8 @@ Local cPar := “Teste”
 Modifica(cPar)//a função Modifica() deve alterar o valor de cPar
 Return(cPar)
 ```
+
+<br />
 
 ***7.*** O que o programa abaixo faz?
 ```ADVPL
