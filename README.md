@@ -30,7 +30,7 @@ Referência [OData Services](https://www.odata.org/odata-services/)
 - [ ] Consultar todos os aeroportos que o ***endereço da localização*** contenha a palavra 'District'
 
 
-# QUESTÕES APENAS PARA DESENVOLVEDORES ADVPL
+#### QUESTÕES EXCLUSIVAS PARA DESENVOLVEDORES ADVPL
 
 ***1.*** Qual a finalidade dos arquivos abaixo no Protheus:
 - SX1 
