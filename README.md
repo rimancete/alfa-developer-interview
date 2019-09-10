@@ -32,7 +32,7 @@ Referência [OData Services](https://www.odata.org/odata-services/)
 
 # QUESTÕES APENAS PARA DESENVOLVEDORES ADVPL
 
-1. Qual a finalidade dos arquivos abaixo no Protheus:
+***1.*** Qual a finalidade dos arquivos abaixo no Protheus:
 - SX1 
 - SX2
 - SX3 
@@ -40,13 +40,13 @@ Referência [OData Services](https://www.odata.org/odata-services/)
 - SIGAADV.PSS 
 
 
-2. Descreva, de forma breve, como criar um ambiente de testes, a partir de um ambiente de produção já em uso. Este ambiente de testes deve utilizar um banco de dados próprio (não pode utilizar o banco de dados da produção).
+***2.*** Descreva, de forma breve, como criar um ambiente de testes, a partir de um ambiente de produção já em uso. Este ambiente de testes deve utilizar um banco de dados próprio (não pode utilizar o banco de dados da produção).
 
 
-3. Como fazemos para consultar, instalar ou desinstalar Stored Procedures fornecidas pela Totvs ?
+***3.*** Como fazemos para consultar, instalar ou desinstalar Stored Procedures fornecidas pela Totvs ?
 
 
-4. Para que servem as chaves abaixo, no arquivo APPSERVER.INI ?
+***4.*** Para que servem as chaves abaixo, no arquivo APPSERVER.INI ?
 * [PRODUCAO]	 
 * SourcePath=C:\Protheus_12_v16\apo	 
 * RootPath=C:\Protheus_12_v16\protheus_data	 
@@ -64,7 +64,7 @@ Referência [OData Services](https://www.odata.org/odata-services/)
 * TopALIAS=PROTHEUSV12	 
 
 
-5. Descreva o que significa cada parte do código:
+***5.*** Descreva o que significa cada parte do código:
 ```ADVPL
 Processa({||U_GPT(Cod)},"A executar")
 ```
@@ -74,7 +74,7 @@ Processa({||U_GPT(Cod)},"A executar")
 * Cod	 
 * "A executar"	 
  	 
-6. Qual é o erro do programa abaixo e como corrigí-lo?
+***6.*** Qual é o erro do programa abaixo e como corrigí-lo?
 ```ADVPL
 User Function Exemplo()
 Local cPar := “Teste”
@@ -82,7 +82,7 @@ Modifica(cPar)//a função Modifica() deve alterar o valor de cPar
 Return(cPar)
 ```
 
-7. O que o programa abaixo faz?
+***7.*** O que o programa abaixo faz?
 ```ADVPL
 If SB1->B1_TIPO $ "PA/MC/"
  
