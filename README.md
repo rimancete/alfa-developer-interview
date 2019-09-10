@@ -28,6 +28,86 @@ Referência [OData Services](https://www.odata.org/odata-services/)
 - [ ] ***Incluir*** uma pessoa
 - [ ] ***Excluir*** a pessoa que você incluiu acima
 - [ ] Consultar todos os aeroportos que o ***endereço da localização*** contenha a palavra 'District'
-- [ ] ***Extra*** crie testes unitários para as operações acima.
 
-Boa sorte! Lets code!
+
+# QUESTÕES APENAS PARA DESENVOLVEDORES ADVPL
+
+1. Qual a finalidade dos arquivos abaixo no Protheus:
+- SX1 
+- SX2
+- SX3 
+- SIGAMAT.EMP
+- SIGAADV.PSS 
+
+
+2. Descreva, de forma breve, como criar um ambiente de testes, a partir de um ambiente de produção já em uso. Este ambiente de testes deve utilizar um banco de dados próprio (não pode utilizar o banco de dados da produção).
+
+
+3. Como fazemos para consultar, instalar ou desinstalar Stored Procedures fornecidas pela Totvs ?
+
+
+4. Para que servem as chaves abaixo, no arquivo APPSERVER.INI ?
+* [PRODUCAO]	 
+* SourcePath=C:\Protheus_12_v16\apo	 
+* RootPath=C:\Protheus_12_v16\protheus_data	 
+* StartPath=\system\	 
+* RpoDb=Top	 
+* RpoLanguage=portuguese	 
+* RpoVersion=120	 
+* LocalFiles=ctree	 
+* localdbextension=.dtc	 
+* RegionalLanguage=BRA	 
+* helpserver=help.outsourcing.com.br/p11	 
+* TOPMEMOMEGA=1	 
+* TopDataBase=MSSQL	 
+* TopServer=localhost	 
+* TopALIAS=PROTHEUSV12	 
+
+
+5. Descreva o que significa cada parte do código:
+```ADVPL
+Processa({||U_GPT(Cod)},"A executar")
+```
+* Processa	 
+* {||}	  	 
+* U_GPT	 
+* Cod	 
+* "A executar"	 
+ 	 
+6. Qual é o erro do programa abaixo e como corrigí-lo?
+```ADVPL
+User Function Exemplo()
+Local cPar := “Teste”
+Modifica(cPar)//a função Modifica() deve alterar o valor de cPar
+Return(cPar)
+```
+
+7. O que o programa abaixo faz?
+```ADVPL
+If SB1->B1_TIPO $ "PA/MC/"
+ 
+   SB0->(DBSetOrder(1))
+ 
+   If SB0->(DBSeek(xFilial("SB0")+SB1->B1_COD))
+ 
+      RecLock("SB0",.F.)
+ 
+      SB0->B0_PRV1 := SB1->B1_PRV1
+ 
+      MsUnLock("SB0")
+ 
+   Else 
+ 
+      RecLock("SB0",.T.)                  
+ 
+      SB0->B0_COD  := SB1->B1_COD    
+ 
+      SB0->B0_PRV1 := SB1->B1_PRV1    
+ 
+      MsUnLock("SB0")
+ 
+   EndIf
+ 
+EndIf
+```
+
